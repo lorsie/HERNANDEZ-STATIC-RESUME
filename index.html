@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorskie's Portfolio</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/bg.jpg') center/cover no-repeat fixed;
+}
+
+
+  /* Neumorphic card */
+  .neumorphic {
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 8px 8px 20px #c1c6d0, -8px -8px 20px #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .neumorphic:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px #c1c6d0, -4px -4px 15px #ffffff;
+  }
+
+  .icon-link {
+    color: #555;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .icon-link:hover {
+    color: #ff6b6b;
+  }
+
+</style>
+</head>
+
+<body class="antialiased">
+
+<!-- HERO SECTION -->
+<section class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 py-10 gap-10">
+  
+ <!-- Left: Glass Text Box with Glass + Neumorphic Hover -->
+<div class="lg:w-1/2">
+  <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-glass transition-all duration-500 hover:shadow-glass-hover hover:scale-105">
+    <h1 class="text-5xl font-bold text-gray-900">
+    Hi, I'm <span style="color:#4B3621;">Lorskie</span>
+
+    </h1>
+    <p class="text-gray-800 text-lg leading-relaxed mt-4">
+      A passionate Computer Science student exploring web development, software engineering, 
+      and modern system design. I build aesthetically pleasing, functional, and user-friendly applications.
+    </p>
+
+    <div class="flex gap-4 mt-6">
+  <a href="skill.html" class="px-5 py-2 rounded-full text-white font-semibold shadow-md transition" style="background-color: #A18D6D;" onmouseover="this.style.backgroundColor='#957C62'" onmouseout="this.style.backgroundColor='#A18D6D'">Skills</a>
+  
+  <a href="projects.html" class="px-5 py-2 rounded-full text-white font-semibold shadow-md transition" style="background-color: #715A5A;" onmouseover="this.style.backgroundColor='#C1856D'" onmouseout="this.style.backgroundColor='#715A5A'">Projects</a>
+  
+  <a href="education.html" class="px-5 py-2 rounded-full text-white font-semibold shadow-md transition" style="background-color: #B77466;" onmouseover="this.style.backgroundColor='#C1856D'" onmouseout="this.style.backgroundColor='#B77466'">Education</a>
+</div>
+
+
+    <div class="flex gap-4 mt-6">
+      <a href="mailto:your@email.com" class="icon-link"><i class="bi bi-envelope"></i></a>
+      <a href="https://github.com/lorsie" target="_blank" class="icon-link"><i class="bi bi-github"></i></a>
+      <a href="#" class="icon-link"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+  <!-- Right: Profile -->
+  <div class="lg:w-1/2 flex justify-center">
+    <div class="neumorphic p-4 rounded-3xl">
+      <img src="images/me.jpg" alt="Profile" class="rounded-2xl shadow-lg object-cover w-96 h-96">
+    </div>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="px-6 lg:px-20 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+  <div class="neumorphic p-6 text-center shadow-lg" style="border: 4px solid #A18D6D;">
+    <h3 class="text-xl font-semibold mb-3" style="color:#A18D6D;">Design</h3>
+    <p class="text-gray-600">I craft clean, intuitive interfaces that balance beauty with usability, ensuring an engaging user experience.</p>
+  </div>
+  <div class="neumorphic p-6 text-center shadow-lg" style="border: 4px solid #957C62;">
+    <h3 class="text-xl font-semibold mb-3" style="color:#715A5A;">Development</h3>
+    <p class="text-gray-600">I build scalable, maintainable applications using modern front-end and back-end technologies.</p>
+  </div>
+  <div class="neumorphic p-6 text-center shadow-lg" style="border: 4px solid #C1856D;">
+    <h3 class="text-xl font-semibold mb-3" style="color:#B77466;">Growth</h3>
+    <p class="text-gray-600">I continuously learn emerging tools, frameworks, and best practices to sharpen my skills.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-10 text-gray-500">
+  © 2025 Lorah Jyn I. Hernandez
+</footer>
+
+</body>
+</html>
